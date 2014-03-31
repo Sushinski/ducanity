@@ -1,0 +1,565 @@
+<doc>
+    <assembly>
+        <name>TimesSquare.iOS</name>
+    </assembly>
+    <members>
+        <member name="T:ApiDefinition.Messaging">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:ApiDefinition.Messaging">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSend_UInt32_RectangleF(System.IntPtr,System.IntPtr,System.UInt32,System.Drawing.RectangleF)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:ApiDefinition.Messaging.void_objc_msgSendSuper_UInt32_RectangleF(System.IntPtr,System.IntPtr,System.UInt32,System.Drawing.RectangleF)">
+            <param name="receiver">To be added.</param>
+            <param name="selector">To be added.</param>
+            <param name="arg1">To be added.</param>
+            <param name="arg2">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:TimesSquare.iOS.TSQCalendarCell">
+            <summary>
+                <para>The <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarCell" /></computeroutput> class is an abstract superclass to the two cell types used for display in a <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarView" /></computeroutput>.</para>
+            </summary>
+            <remarks>
+                <para>The <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarCell" /></computeroutput> class is an abstract superclass to the two cell types used for display in a <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarView" /></computeroutput>.</para>
+                <para>Most of its interface deals with display properties. The most interesting method is <computeroutput>-layoutViewsForColumnAtIndex:inRect:</computeroutput>, which is a simple way of handling seven columns. </para>
+            </remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarCell">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarCell(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarCell(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarCell(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarCell(MonoTouch.Foundation.NSCalendar,System.String)">
+            <param name="calendar">The NSCalendar the cell is representing </param>
+            <param name="reuseIdentifier">A string reuse identifier, as used by UITableViewCell</param>
+            <summary>
+                <para>Initializes the cell.</para>
+            </summary>
+            <remarks>
+                <para>Initializes the cell.</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarCell.Calendar">
+            <summary>
+                <para>The calendar type we're displaying.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The calendar type we're displaying.</para>
+                <para>This is whatever the owning <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarView" /></computeroutput>'s <computeroutput>calendar</computeroutput> property is set to; it's likely <computeroutput>[NSCalendar currentCalendar]</computeroutput>. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarCell.CalendarView">
+            <summary>
+                <para>The owning calendar view.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The owning calendar view.</para>
+                <para>This is a weak reference. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarCell.CellHeight">
+            <summary>
+                <para>The preferred height for this cell.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The preferred height for this cell.</para>
+                <para>The built-in implementation in <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarCell" /></computeroutput> returns <computeroutput>46.0f</computeroutput>. Your subclass may want to return something else, whether it is a constant or it is based on other properties of the cell. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarCell.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarCell.ColumnSpacing">
+            <summary>
+                <para>The spacing between columns.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The spacing between columns.</para>
+                <para>This defaults to one pixel or <computeroutput>1.0 / [UIScreen mainScreen].scale</computeroutput>. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarCell.DaysInWeek">
+            <summary>
+                <para>How many days there are in a week.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>How many days there are in a week.</para>
+                <para>This is usually 7. </para>
+            </remarks>
+        </member>
+        <member name="M:TimesSquare.iOS.TSQCalendarCell.Dispose(System.Boolean)">
+            <param name="disposing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarCell.FirstOfMonth">
+            <summary>
+                <para>The first day of the month this cell is currently representing.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The first day of the month this cell is currently representing.</para>
+                <para>This can be useful for calculations and for display. </para>
+            </remarks>
+        </member>
+        <member name="M:TimesSquare.iOS.TSQCalendarCell.LayoutViews(System.UInt32,System.Drawing.RectangleF)">
+            <param name="index">The index of the column we're laying out, probably in the range [0..6] </param>
+            <param name="rect">The rect relative to the bounds of the cell's content view that represents the column.</param>
+            <summary>
+                <para>Seven-column layout helper.</para>
+            </summary>
+            <remarks>
+                <para>Seven-column layout helper.</para>
+                <para>
+Feel free to adjust the rect before moving views and to vertically position them within the column. (In fact, you could ignore the rect entirely; it's just there to help.) </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarCell.ShadowOffset">
+            <summary>
+                <para>The text shadow offset.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The text shadow offset.</para>
+                <para>This is as you would set on <computeroutput>UILabel</computeroutput>. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarCell.TextColor">
+            <summary>
+                <para>The text color.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The text color.</para>
+                <para>This is used for all text the cell draws; if a date is disabled, then it will draw in this color, but at 50% opacity. </para>
+            </remarks>
+        </member>
+        <member name="T:TimesSquare.iOS.TSQCalendarMonthHeaderCell">
+            <summary>
+                <para>The <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarMonthHeaderCell" /></computeroutput> class displays the month name and day names at the top of a month's worth of weeks.</para>
+            </summary>
+            <remarks>
+                <para>The <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarMonthHeaderCell" /></computeroutput> class displays the month name and day names at the top of a month's worth of weeks.</para>
+                <para>By default, it lays out the day names in the bottom 20 points, the month name in the remainder of its height, and has a height of 65 points. You'll want to subclass it to change any of those things. </para>
+            </remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarMonthHeaderCell">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarMonthHeaderCell(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarMonthHeaderCell(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarMonthHeaderCell(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarMonthHeaderCell(MonoTouch.Foundation.NSCalendar,System.String)">
+            <param name="calendar">To be added.</param>
+            <param name="reuseIdentifier">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarMonthHeaderCell.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:TimesSquare.iOS.TSQCalendarMonthHeaderCell.CreateHeaderLabels">
+            <summary>
+                <para>Creates the header labels.</para>
+            </summary>
+            <remarks>
+                <para>Creates the header labels.</para>
+                <para>If you want the text in your header labels to be something other than the short day format ("Mon Tue Wed" etc.), override this method, call <computeroutput>super</computeroutput>, and loop through <computeroutput>self.headerLabels</computeroutput>, changing their text. </para>
+            </remarks>
+        </member>
+        <member name="M:TimesSquare.iOS.TSQCalendarMonthHeaderCell.Dispose(System.Boolean)">
+            <param name="disposing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarMonthHeaderCell.HeaderLabels">
+            <summary>
+                <para>The day header labels.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The day header labels.</para>
+                <para>The count is equal to the <computeroutput>daysInWeek</computeroutput> property, likely seven. You can position them in the call to <computeroutput>layoutViewsForColumnAtIndex:inRect:</computeroutput>. </para>
+            </remarks>
+        </member>
+        <member name="T:TimesSquare.iOS.TSQCalendarRowCell">
+            <summary>
+                <para>The <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarRowCell" /></computeroutput> class is a cell that represents one week in the calendar.</para>
+            </summary>
+            <remarks>
+                <para>The <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarRowCell" /></computeroutput> class is a cell that represents one week in the calendar.</para>
+                <para>Each of the seven columns can represent a day that's in this month, a day that's not in this month, a selected day, today, or an unselected day. The cell uses several images placed strategically to achieve the effect. </para>
+            </remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarRowCell">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarRowCell(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarRowCell(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarRowCell(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarRowCell(MonoTouch.Foundation.NSCalendar,System.String)">
+            <param name="calendar">To be added.</param>
+            <param name="reuseIdentifier">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarRowCell.BackgroundImage">
+            <summary>
+                <para>The background image for the entire row.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The background image for the entire row.</para>
+                <para>This image should be as wide as the entire view and include the grid lines between the columns. It will probably also include the grid line at the top of the row, but not the one at the bottom.</para>
+                <para>You might, however, return a different image that includes both the grid line at the top and the one at the bottom if the <computeroutput>bottomRow</computeroutput> property is set to <computeroutput>YES</computeroutput>. You might even adjust the <computeroutput>cellHeight</computeroutput>. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarRowCell.BeginningDate">
+            <summary>
+                <para>The date at the beginning of the week for this cell.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The date at the beginning of the week for this cell.</para>
+                <para>Notice that it might be before the <computeroutput>firstOfMonth</computeroutput> property or it might be after. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarRowCell.BottomRow">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarRowCell.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:TimesSquare.iOS.TSQCalendarRowCell.Dispose(System.Boolean)">
+            <param name="disposing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarRowCell.NotThisMonthBackgroundImage">
+            <summary>
+                <para>The background image for a day that's not this month.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The background image for a day that's not this month.</para>
+                <para>These are the trailing days from the previous month or the leading days from the following month. This can be <computeroutput>nil</computeroutput>. </para>
+            </remarks>
+        </member>
+        <member name="M:TimesSquare.iOS.TSQCalendarRowCell.SelectColumnForDate(MonoTouch.Foundation.NSDate)">
+            <param name="date">The date to select, or nil to deselect all columns. </param>
+            <summary>
+                <para>Method to select a specific date within the week.</para>
+            </summary>
+            <remarks>
+                <para>Method to select a specific date within the week.</para>
+                <para>This is funneled through and called by the calendar view, to facilitate deselection of other rows.</para>
+                <para />
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarRowCell.SelectedBackgroundImage">
+            <summary>
+                <para>The background image for a day that's selected.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The background image for a day that's selected.</para>
+                <para>This is blue in the system's built-in Calendar app. You probably want to use a stretchable image. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarRowCell.TodayBackgroundImage">
+            <summary>
+                <para>The background image for a day that's "today".</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The background image for a day that's "today".</para>
+                <para>This is dark gray in the system's built-in Calendar app. You probably want to use a stretchable image. </para>
+            </remarks>
+        </member>
+        <member name="T:TimesSquare.iOS.TSQCalendarView">
+            <summary>
+                <para>The <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarView" /></computeroutput> class displays a monthly calendar in a self-contained scrolling view. It supports any calendar that <computeroutput>NSCalendar</computeroutput> supports.</para>
+            </summary>
+            <remarks>
+                <para>The <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarView" /></computeroutput> class displays a monthly calendar in a self-contained scrolling view. It supports any calendar that <computeroutput>NSCalendar</computeroutput> supports.</para>
+                <para>The implementation and usage are very similar to <computeroutput>UITableView</computeroutput>: the app provides reusable cells via a data source and controls behavior via a delegate. See <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarCell" /></computeroutput> for a cell superclass. </para>
+            </remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarView">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarView(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarView(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarView(System.Drawing.RectangleF)">
+            <param name="frame">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarView(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.Calendar">
+            <summary>
+                <para>The calendar type to use when displaying.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The calendar type to use when displaying.</para>
+                <para>If not set, this defaults to <computeroutput>[NSCalendar currentCalendar]</computeroutput>. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.ClassHandle">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.ContentInset">
+            <summary>
+                <para>The distance from the edges of the view to where the content begins.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The distance from the edges of the view to where the content begins.</para>
+                <para>This property is equivalent to the one defined on <computeroutput>UIScrollView</computeroutput>. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.ContentOffset">
+            <summary>
+                <para>The point on the calendar where the currently-visible region starts.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The point on the calendar where the currently-visible region starts.</para>
+                <para>This property is equivalent to the one defined on <computeroutput>UIScrollView</computeroutput>. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.Delegate">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="E:TimesSquare.iOS.TSQCalendarView.DidSelectDate">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:TimesSquare.iOS.TSQCalendarView.Dispose(System.Boolean)">
+            <param name="disposing">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.FirstDate">
+            <summary>
+                <para>The earliest month the calendar view displays.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The earliest month the calendar view displays.</para>
+                <para>Set this property to any <computeroutput>NSDate</computeroutput>; <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarView" /></computeroutput> will only look at the month and year. Must be set for the calendar to be useful. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.HeaderCellClass">
+            <summary>
+                <para>The cell class to use for month headers.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The cell class to use for month headers.</para>
+                <para>Since there's very little configuration to be done for each cell, this can be set as a shortcut to implementing a data source. The class should be a subclass of <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarMonthHeaderCell" /></computeroutput> or at least implement all of its methods. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.LastDate">
+            <summary>
+                <para>The latest month the calendar view displays.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The latest month the calendar view displays.</para>
+                <para>Set this property to any <computeroutput>NSDate</computeroutput>; <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarView" /></computeroutput> will only look at the month and year. Must be set for the calendar to be useful. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.PagingEnabled">
+            <summary>
+                <para>Whether or not the calendar snaps to begin a month at the top of its bounds.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>Whether or not the calendar snaps to begin a month at the top of its bounds.</para>
+                <para>This property is roughly equivalent to the one defined on <computeroutput>UIScrollView</computeroutput> except the snapping is to months rather than integer multiples of the view's bounds. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.PinsHeaderToTop">
+            <summary>
+                <para>Whether to pin the header to the top of the view.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>Whether to pin the header to the top of the view.</para>
+                <para>If you're trying to emulate the built-in calendar app, set this to <computeroutput>YES</computeroutput>. Default value is <computeroutput>NO</computeroutput>. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.RowCellClass">
+            <summary>
+                <para>The cell class to use for week rows.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The cell class to use for week rows.</para>
+                <para>Since there's very little configuration to be done for each cell, this can be set as a shortcut to implementing a data source. The class should be a subclass of <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarRowCell" /></computeroutput> or at least implement all of its methods. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.SelectedDate">
+            <summary>
+                <para>The currently-selected date on the calendar.</para>
+            </summary>
+            <value>To be added.</value>
+            <remarks>
+                <para>The currently-selected date on the calendar.</para>
+                <para>Set this property to any <computeroutput>NSDate</computeroutput>; <computeroutput><see cref="T:TimesSquare.iOS.TSQCalendarView" /></computeroutput> will only look at the month, day, and year. You can read and write this property; the delegate method <computeroutput>calendarView:didSelectDate:</computeroutput> will be called when a new date is selected from the UI but <emphasis>not</emphasis> when this method is called manually. </para>
+            </remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.ShouldSelectDate">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarView.WeakDelegate">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:TimesSquare.iOS.TSQCalendarViewDelegate">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarViewDelegate">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarViewDelegate(MonoTouch.Foundation.NSCoder)">
+            <param name="coder">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarViewDelegate(MonoTouch.Foundation.NSObjectFlag)">
+            <param name="t">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarViewDelegate(System.IntPtr)">
+            <param name="handle">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:TimesSquare.iOS.TSQCalendarViewDelegate.DidSelectDate(TimesSquare.iOS.TSQCalendarView,MonoTouch.Foundation.NSDate)">
+            <param name="calendarView">To be added.</param>
+            <param name="date">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="M:TimesSquare.iOS.TSQCalendarViewDelegate.ShouldSelectDate(TimesSquare.iOS.TSQCalendarView,MonoTouch.Foundation.NSDate)">
+            <param name="calendarView">To be added.</param>
+            <param name="date">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:TimesSquare.iOS.TSQCalendarViewDelegateAEventArgs">
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="C:TimesSquare.iOS.TSQCalendarViewDelegateAEventArgs(MonoTouch.Foundation.NSDate)">
+            <param name="date">To be added.</param>
+            <summary>To be added.</summary>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="P:TimesSquare.iOS.TSQCalendarViewDelegateAEventArgs.Date">
+            <summary>To be added.</summary>
+            <value>To be added.</value>
+            <remarks>To be added.</remarks>
+        </member>
+        <member name="T:TimesSquare.iOS.TSQCalendarViewDelegateS">
+            <param name="calendarView">To be added.</param>
+            <param name="date">To be added.</param>
+            <summary>To be added.</summary>
+            <returns>To be added.</returns>
+            <remarks>To be added.</remarks>
+        </member>
+    </members>
+</doc>

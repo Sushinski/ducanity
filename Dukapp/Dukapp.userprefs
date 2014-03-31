@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|iPhoneSimulator" PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.IPhoneRetina4.7.1" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GraphView.cs">
+    <Files>
+      <File FileName="Screens/HomeVC.cs" Line="69" Column="20" />
+      <File FileName="Screens/DukappPagedVC.cs" Line="1" Column="1" />
+      <File FileName="Screens/TextVC.cs" Line="35" Column="73" />
+      <File FileName="Screens/InAppPrefsVC.cs" Line="30" Column="94" />
+      <File FileName="Screens/ChartTabVC.cs" Line="79" Column="15" />
+      <File FileName="Screens/ChartView.cs" Line="37" Column="50" />
+      <File FileName="GraphView.cs" Line="60" Column="50" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/mac/Projects/ducanity/Dukapp/Screens/BasketTableSrc.cs" line="80" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

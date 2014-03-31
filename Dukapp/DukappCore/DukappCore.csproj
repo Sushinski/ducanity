@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{584C66AD-057A-4694-974C-C2AA280306B5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>DukappCore</RootNamespace>
+    <AssemblyName>DukappCore</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhoneSimulator' ">
+    <DebugSymbols>true</DebugSymbols>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="BusinessLayer\" />
+    <Folder Include="DataAccessLayer\" />
+    <Folder Include="DataLayer\" />
+    <Folder Include="BusinessLayer\Contracts\" />
+    <Folder Include="BusinessLayer\Managers\" />
+    <Folder Include="BusinessLayer\Records\" />
+    <Folder Include="BusinessLayer\Objects\" />
+    <Folder Include="BusinessLayer\Attributes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BusinessLayer\Contracts\IRecord.cs" />
+    <Compile Include="BusinessLayer\Contracts\RecordBase.cs" />
+    <Compile Include="DataLayer\SQLite.cs" />
+    <Compile Include="BusinessLayer\Managers\RecordManager.cs" />
+    <Compile Include="DataAccessLayer\DukappRepository.cs" />
+    <Compile Include="DataLayer\DukappDatabase.cs" />
+    <Compile Include="DataAccessLayer\RuleRepository.cs" />
+    <Compile Include="DataAccessLayer\MealRepository.cs" />
+    <Compile Include="DataAccessLayer\ScheduleRepository.cs" />
+    <Compile Include="BusinessLayer\Managers\ScheduleManager.cs" />
+    <Compile Include="BusinessLayer\Records\MealRecord.cs" />
+    <Compile Include="BusinessLayer\Records\RuleRecord.cs" />
+    <Compile Include="BusinessLayer\Records\ScheduleRecord.cs" />
+    <Compile Include="BusinessLayer\Objects\ScheduleDay.cs" />
+    <Compile Include="BusinessLayer\Objects\ScheduleMaker.cs" />
+    <Compile Include="BusinessLayer\Objects\DietPhase.cs" />
+    <Compile Include="BusinessLayer\Records\RecipeRecord.cs" />
+    <Compile Include="DataAccessLayer\RecipeRepository.cs" />
+    <Compile Include="BusinessLayer\Records\RecipeMealsRecord.cs" />
+    <Compile Include="BusinessLayer\Attributes\SQLRelationAttributes.cs" />
+    <Compile Include="BusinessLayer\Managers\RecipeManager.cs" />
+    <Compile Include="BusinessLayer\Records\BasketMealsRecord.cs" />
+    <Compile Include="DataAccessLayer\BasketRepository.cs" />
+    <Compile Include="BusinessLayer\Managers\BasketManager.cs" />
+    <Compile Include="BusinessLayer\Managers\MealManager.cs" />
+    <Compile Include="BusinessLayer\Records\RecipeType.cs" />
+    <Compile Include="BusinessLayer\Records\PrefsRecord.cs" />
+    <Compile Include="BusinessLayer\Managers\PrefsManager.cs" />
+    <Compile Include="DataAccessLayer\PrefsRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Data" />
+    <Reference Include="System" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+</Project>
